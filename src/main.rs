@@ -1,3 +1,5 @@
+// hello world
+
 slint::slint!{
     import { Button, VerticalBox } from "std-widgets.slint";
     export component App inherits Window {
