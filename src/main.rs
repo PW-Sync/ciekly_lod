@@ -1,3 +1,14 @@
+slint::slint!{
+    import { Button, VerticalBox } from "std-widgets.slint";
+    export component App inherits Window {
+        VerticalBox {
+            Text { text: "hello world."; }
+            Button { text: "wow"; }
+        }
+    }
+}
+
 fn main() {
-    println!("Hello, world!");
+    App::new().unwrap().run().unwrap();
+    println!("hello world");
 }
